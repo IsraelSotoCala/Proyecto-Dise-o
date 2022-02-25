@@ -1,0 +1,61 @@
+/*
+#gimp {
+  background-image: url(../img/cyberisra.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+#box {
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  background-image: url(../img/cum.webp);
+  background-size: 4em;
+}
+
+#box:hover {
+  transition: all 4s linear;
+  transform: skew(180deg, 180deg) rotateY(720deg) rotateZ(720deg);
+  background: gold;
+  background-image: url(../img/cum.webp);
+  background-size: 2em;
+}
+
+#cubito {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation: myfirst 5s linear 2s infinite alternate;
+}
+
+@keyframes myfirst {
+  0% {
+    background-image: url(../img/place_holder.png);
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    background-color: yellow;
+    left: 200px;
+    top: 0px;
+  }
+  50% {
+    background-color: blue;
+    left: 200px;
+    top: 200px;
+  }
+  75% {
+    background-color: green;
+    left: 0px;
+    top: 200px;
+  }
+  100% {
+    background-color: red;
+    left: 0px;
+    top: 0px;
+  }
+}
+
+*/
