@@ -22,11 +22,29 @@ form {
   width: 50em;
 }
 
+header {
+  color: beige;
+}
+
+header a {
+  text-decoration: none;
+  color: beige;
+}
+
+header h1 {
+  font-size: 1.7em;
+}
+
 /*
     Tamaño del logo del encabezado
 */
+.navColor {
+  color: beige;
+}
+
 #logoNav {
-  width: 5em;
+  height: 4.5em;
+  width: auto;
 }
 
 /*

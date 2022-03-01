@@ -35,21 +35,26 @@
         En esta seccion comienza una barra de navegacion, la cual hemos fusionado con el encabezado,
         la propia barra acompaña a lo largo de toda la pagina para que todas sus secciones sean accesibles.
     -->
-    <header class="row bg-dark py-2">
-      <div class="col-md-6 text-uppercase">
-        <div class="d-flex justify-content-end">
+    <header class="row bg-dark py-2 text-uppercase">
+      <div class="col-xxl-3">
+        <div class="d-flex justify-content-xxl-start">
           <img id="logoNav" src="img/mdc_icon.png" alt="Logo Mar de Cadiz" />
           <h1 class="pt-4 ps-2">I.E.S. Mar de Cádiz</h1>
         </div>
       </div>
-      <div class="col-md-6">
-        <nav class="navbar navbar-expand-lg">
-          <ul class="nav pt-3">
+
+      <div class="col-xxl-3">
+        <nav class="navbar navbar-expand-lg pt-3">
+          <ul class="nav">
             <!--
                 Seccion 1
             -->
             <li class="nav-item dropdown">
-              <a class="nav-link" href="#" role="button" aria-expanded="false"
+              <a
+                class="nav-link navColor"
+                href="#"
+                role="button"
+                aria-expanded="false"
                 >Sobre nosotros</a
               >
               <ul class="dropdown-menu">
@@ -68,11 +73,14 @@
               </ul>
             </li>
             <!--
-
                 Seccion 2
             -->
             <li class="nav-item dropdown">
-              <a class="nav-link" href="#" role="button" aria-expanded="false"
+              <a
+                class="nav-link navColor"
+                href="#"
+                role="button"
+                aria-expanded="false"
                 >Acceso</a
               >
               <ul class="dropdown-menu">
@@ -91,11 +99,14 @@
               </ul>
             </li>
             <!--
-
                 Seccion 3
             -->
             <li class="nav-item dropdown">
-              <a class="nav-link" href="#" role="button" aria-expanded="false"
+              <a
+                class="nav-link navColor"
+                href="#"
+                role="button"
+                aria-expanded="false"
                 >Estudios</a
               >
               <ul class="dropdown-menu">
@@ -114,11 +125,28 @@
               </ul>
             </li>
           </ul>
-
-          <audio src="audio/MiiPlaza.mp3" controls>
-            Your browser does not support the <code>audio</code> element.
-          </audio>
         </nav>
+      </div>
+      <div class="col-xxl-3 pt-4 ps-5">
+        <a href="#" class="pe-4"> Iniciar Sesion </a>
+        <a href="index.html"> Volver al Inicio </a>
+      </div>
+      <div class="col-xxl-3">
+        <audio
+          id="myaudio"
+          src="audio/MiiPlaza.mp3"
+          controls
+          class="pt-3"
+          autoplay
+        >
+          Your browser does not support the <code>audio</code> element.
+        </audio>
+        <script>
+          window.onload = () => {
+            var audio = document.getElementById("myaudio");
+            audio.volume = 0.05;
+          };
+        </script>
       </div>
     </header>
 
