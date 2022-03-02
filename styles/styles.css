@@ -18,6 +18,14 @@ body {
   font-family: "Noto Serif";
 }
 
+.beige {
+  color: beige;
+}
+
+.gris {
+  color: #6c757d;
+}
+
 form {
   width: 50em;
 }
@@ -57,7 +65,7 @@ header h1 {
 
 #galeria {
   height: auto;
-  width: 70em;
+  width: 80em;
 }
 
 /*

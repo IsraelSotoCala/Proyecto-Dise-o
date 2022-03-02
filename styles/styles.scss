@@ -15,9 +15,17 @@
 */
 
 body {
-  color: $color;
+  color: $gris;
   box-sizing: border-box;
   font-family: $fuente;
+}
+
+.beige {
+  color: $beige;
+}
+
+.gris {
+  color: $gris;
 }
 
 form {
@@ -61,7 +69,7 @@ header h1 {
 
 #galeria {
   height: auto;
-  width: 70em;
+  width: 80em;
 }
 
 /*
