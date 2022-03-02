@@ -55,6 +55,11 @@ header h1 {
   margin-top: 0;
 }
 
+#galeria {
+  height: auto;
+  width: 70em;
+}
+
 /*
     Tamaño del calendario y el gps.
 */
