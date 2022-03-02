@@ -12,9 +12,9 @@
     Estableces la fuente y el color de las letras de la pagina.
 */
 body {
-  color: #6c757d;
+  color: white;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-family: "Noto Serif";
 }
 

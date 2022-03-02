@@ -17,17 +17,108 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="../../../styles/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+      crossorigin="anonymous"
+      integrity="sha384-He3RckdFB2wffiHOcESa3sf4Ida+ni/fw9SSzAcfY2EPnU1zkK/sLUzw2C5Tyuhj"
+    />
+    <link rel="stylesheet" href="../styles/recursosvarios.css" />
+    <link rel="stylesheet" href="../styles/styles.css" />
   </head>
   <body>
+    <video id="fondo" autoplay muted loop>
+      <source src="../video/awita.mp4" type="video/mp4" />
+    </video>
+
+    <header class="row bg-dark py-2">
+      <div class="col-md-6 text-uppercase">
+        <div class="d-flex justify-content-end">
+          <img id="logoNav" src="../img/mdc_icon.png" alt="Logo Mar de Cadiz" />
+          <h1 class="pt-4 ps-2">I.E.S. Mar de Cádiz</h1>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <nav class="navbar navbar-expand-lg">
+          <ul class="nav pt-3">
+            <!--
+                Seccion 1
+            -->
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="#" role="button" aria-expanded="false"
+                >Sobre nosotros</a
+              >
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="#">Presentacion</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Organizacion</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Galeria</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Medidas Covid</a>
+                </li>
+              </ul>
+            </li>
+            <!--
+                Seccion 2
+            -->
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="#" role="button" aria-expanded="false"
+                >Acceso</a
+              >
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="#">Orientacion</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Matricula</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Atencion al Alumnado</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Becas y Ayudas</a>
+                </li>
+              </ul>
+            </li>
+            <!--
+                Seccion 3
+            -->
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="#" role="button" aria-expanded="false"
+                >Estudios</a
+              >
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="#">ESO</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Bachillerato</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Grados Profesionales</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Calendario Escolar</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <audio src="../../audio/MiiPlaza.mp3" controls>
+            Your browser does not support the <code>audio</code> element.
+          </audio>
+        </nav>
+      </div>
+    </header>
     <!--Carrusel-->
 
-    <article class="py-5 w-50">
-      <div class="text-center text-uppercase">
-        <h2>Tutoriales de Gimp</h2>
-      </div>
-
-      <div id="galeria" class="carousel slide" data-bs-ride="carousel">
+    <article class="row py-2">
+      <div id="galeria" class="carousel slide col-lg-4" data-bs-ride="carousel">
+        <h3 class="text-center text-uppercase">Tutoriales de Gimp</h3>
         <ol class="carousel-indicators">
           <li
             data-bs-target="#galeria"
@@ -82,6 +173,141 @@
           <span class="visually-hidden">Siguiente</span>
         </a>
       </div>
+
+      <div class="py-2 col-lg-4">
+        <h3 class="text-center text-uppercase">Tutoriales transcisiones CSS</h3>
+        <div id="animacion"></div>
+      </div>
+
+      <div class="py-2 col-lg-4" id="transformacion">
+        <h3 class="text-center text-uppercase">
+          Tutoriales transformación CSS
+        </h3>
+        <img src="../img/cyberisra.jpg" />
+      </div>
     </article>
+
+    <footer class="row bg-dark text-center">
+      <div class="my-4 border-bottom"></div>
+      <!--
+        Direcion
+      -->
+      <div class="col-xxl-3 p-4">
+        <h6 class="text-uppercase fw-bold">
+          <img id="logoPie" src="../img/mdc_icon.png " alt="Mar de Cadiz Pie" />
+          I.E.S Mar de Cádiz
+        </h6>
+
+        <p>Avenida de Rafael Alberti s/n. El Puerto de Santa María</p>
+        <p>
+          <a href="https://jigsaw.w3.org/css-validator/check/referer">
+            <img
+              style="border: 0; width: 88px; height: 31px"
+              src="https://jigsaw.w3.org/css-validator/images/vcss-blue"
+              alt="¡CSS Válido!"
+            />
+          </a>
+        </p>
+      </div>
+      <!--
+        Enlaces de Interes
+      -->
+      <div class="col-xxl-3 p-4">
+        <p>
+          <a
+            href="https://seneca.juntadeandalucia.es/seneca/jsp/portal/"
+            class="text-reset"
+            >Seneca</a
+          >
+        </p>
+
+        <p>
+          <a
+            href="https://seneca.juntadeandalucia.es/seneca/jsp/portalpasen/"
+            class="text-reset"
+            >Pasen</a
+          >
+        </p>
+
+        <p>
+          <a href="https://www.juntadeandalucia.es/" class="text-reset"
+            >Junta de Andalucia</a
+          >
+        </p>
+      </div>
+
+      <div class="col-xxl-3 p-4">
+        <p>
+          <a
+            href="https://www.juntadeandalucia.es/educacion/portals/web/ced"
+            class="text-reset"
+            >Conserjeria de Educacion</a
+          >
+        </p>
+
+        <p>
+          <a
+            href="https://www.juntadeandalucia.es/educacion/portals/web/ced/delegaciones/cadiz"
+            class="text-reset"
+            >Delegacion de Cadiz</a
+          >
+        </p>
+
+        <p>
+          <a
+            href="https://www.juntadeandalucia.es/eboja.html"
+            class="text-reset"
+            >BOJA</a
+          >
+        </p>
+      </div>
+      <!--
+        Contacto
+      -->
+      <div class="col-xxl-3 p-4">
+        <h6 class="text-uppercase fw-bold">Contáctanos</h6>
+
+        <p>
+          <i class="bi bi-geo-alt"></i> El Puerto de Santa María, Cádiz, 11500,
+          ES
+        </p>
+
+        <p>
+          <i class="bi bi-envelope"></i>
+          11004428.secretaria.edu@juntadeandalucia.es
+        </p>
+
+        <p><i class="bi bi-telephone"></i> +34 956 24 31 28</p>
+        <!--
+            Redes Sociales
+        -->
+        <div id="redesSociales">
+          <a
+            href="https://www.facebook.com/IES-Mar-de-C%C3%A1diz-173224952723147/"
+            class="me-4 text-reset"
+          >
+            <i class="bi bi-facebook" title="Facebook"></i>
+            <p hidden>Facebook</p>
+          </a>
+
+          <a href="https://twitter.com/IESMardeCadiz" class="me-4 text-reset">
+            <i class="bi bi-twitter" title="Twitter"></i>
+            <p hidden>Twitter</p>
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/ies-mar-de-c%C3%A1diz-en-linkdin-0456921ba/"
+            class="me-4 text-reset"
+          >
+            <i class="bi bi-linkedin" title="LinkedIn"></i>
+            <p hidden>LinkedIn</p>
+          </a>
+        </div>
+      </div>
+
+      <div class="text-center bg-dark border-top">
+        <p class="text-reset fw-bold my-4">Israel Soto / Salvador Lax</p>
+      </div>
+    </footer>
   </body>
 </html>

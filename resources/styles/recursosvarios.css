@@ -1,0 +1,54 @@
+#animacion {
+  height: 23.7em;
+  width: 35em;
+  animation-name: animacion;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes animacion {
+  from {
+    content: url(../img/diseno.jpeg);
+  }
+  to {
+    content: url(../img/viajeaperu.jpg);
+  }
+}
+
+#transformacion {
+  height: auto;
+  background-size: cover;
+}
+
+#transformacion img {
+  width: 35em;
+  height: auto;
+}
+
+#transformacion:hover {
+  transition: all 4s linear;
+  transform: rotate(360deg);
+  background-size: cover;
+}
+
+#fondo {
+  position: fixed;
+
+  bottom: 0px;
+
+  min-width: 100%;
+
+  min-height: 100%;
+
+  background-size: cover;
+
+  background-repeat: no-repeat;
+
+  width: auto;
+
+  height: auto;
+
+  z-index: -1000;
+
+  overflow: hidden;
+}
