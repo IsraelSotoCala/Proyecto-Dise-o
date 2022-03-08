@@ -84,6 +84,12 @@ header h1 {
   }
 }
 
+.botones button {
+  border-radius: 50%;
+  background-color: #6c757d;
+  color: beige;
+}
+
 #animacion {
   height: 23.7em;
   width: 35em;
@@ -133,6 +139,7 @@ header h1 {
 
 #fondo {
   position: fixed;
+  margin-left: -0.75em;
   bottom: 0px;
   min-width: 100%;
   min-height: 100%;

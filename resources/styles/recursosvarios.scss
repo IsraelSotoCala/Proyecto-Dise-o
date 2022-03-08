@@ -87,6 +87,14 @@ header {
   }
 }
 
+.botones {
+  button {
+    border-radius: 50%;
+    background-color: $gris;
+    color: $beige;
+  }
+}
+
 #animacion {
   height: 23.7em;
   width: 35em;
@@ -121,22 +129,14 @@ header {
 
 #fondo {
   position: fixed;
-
+  margin-left: -0.75em;
   bottom: 0px;
-
   min-width: 100%;
-
   min-height: 100%;
-
   background-size: cover;
-
   background-repeat: no-repeat;
-
   width: auto;
-
   height: auto;
-
   z-index: -1000;
-
   overflow: hidden;
 }
