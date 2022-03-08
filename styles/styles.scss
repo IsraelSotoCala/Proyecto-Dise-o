@@ -56,6 +56,17 @@ header {
   width: auto;
 }
 
+#directora {
+  border-radius: 50%;
+  border-style: groove;
+  border-color: $beige;
+}
+
+#organigrama {
+  width: 45em;
+  height: auto;
+}
+
 /*
     El navegador se desplegara pasando el raton por encima con esta opcion.
 */

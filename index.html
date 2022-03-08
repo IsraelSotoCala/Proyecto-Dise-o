@@ -32,7 +32,7 @@
         la propia barra acompaña a lo largo de toda la pagina para que todas sus secciones sean accesibles.
     -->
     <header class="row bg-dark py-2 text-uppercase">
-      <div class="col-xxl-3">
+      <div class="col-md-4">
         <div class="d-flex justify-content-xxl-start">
           <img id="logoNav" src="img/mdc_icon.png" alt="Logo Mar de Cadiz" />
           <h1 class="pt-4 ps-2">
@@ -41,7 +41,7 @@
         </div>
       </div>
 
-      <div class="col-xxl-3">
+      <div class="col-md-4">
         <nav class="navbar navbar-expand-lg pt-3">
           <ul class="nav">
             <!--
@@ -62,13 +62,19 @@
                   >
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#">Organizacion</a>
+                  <a class="dropdown-item" href="organizacion.html"
+                    >Organizacion</a
+                  >
                 </li>
                 <li>
                   <a class="dropdown-item" href="galeria.html">Galeria</a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#">Medidas Covid</a>
+                  <a
+                    class="dropdown-item"
+                    href="https://www.elpuertodesantamaria.es/resumen-informacion-covid"
+                    >Medidas Covid</a
+                  >
                 </li>
               </ul>
             </li>
@@ -85,16 +91,24 @@
               >
               <ul class="dropdown-menu">
                 <li>
-                  <a class="dropdown-item" href="#">Orientacion</a>
+                  <a
+                    class="dropdown-item"
+                    href="doc/Cuaderno de Orientacion.pdf"
+                    >Orientacion</a
+                  >
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#">Matricula</a>
+                  <a class="dropdown-item" href="matricula.html">Matricula</a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#">Atencion al Alumnado</a>
+                  <a class="dropdown-item" href="atencionAlumnado.html"
+                    >Atencion al Alumnado</a
+                  >
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#">Becas y Ayudas</a>
+                  <a class="dropdown-item" href="becasAyudas.html"
+                    >Becas y Ayudas</a
+                  >
                 </li>
               </ul>
             </li>
@@ -111,42 +125,31 @@
               >
               <ul class="dropdown-menu">
                 <li>
-                  <a class="dropdown-item" href="#">ESO</a>
+                  <a class="dropdown-item" href="informacionEso.html">ESO</a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#">Bachillerato</a>
+                  <a class="dropdown-item" href="informacionBachillerato.html"
+                    >Bachillerato</a
+                  >
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#">Grados Profesionales</a>
+                  <a class="dropdown-item" href="informacionGrados.html"
+                    >Grados Profesionales</a
+                  >
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#">Calendario Escolar</a>
+                  <a class="dropdown-item" href="calendario.html"
+                    >Calendario Escolar</a
+                  >
                 </li>
               </ul>
             </li>
           </ul>
         </nav>
       </div>
-      <div class="col-xxl-3 pt-4 ps-5">
+      <div class="col-md-4 pt-4 ps-5">
         <a href="#" class="pe-4"> Iniciar Sesion </a>
         <a href="formulario.html"> Crear Cuenta </a>
-      </div>
-      <div class="col-xxl-3">
-        <audio
-          id="myaudio"
-          src="audio/MiiPlaza.mp3"
-          controls
-          class="pt-3"
-          autoplay
-        >
-          Your browser does not support the <code>audio</code> element.
-        </audio>
-        <script>
-          window.onload = () => {
-            var audio = document.getElementById("myaudio");
-            audio.volume = 0.05;
-          };
-        </script>
       </div>
     </header>
     <!--
@@ -165,12 +168,7 @@
       </div>
 
       <div class="col-xl-6 text-end">
-        <img
-          id="imagenCovid"
-          src="img/portada.JPG"
-          class="img-fluid"
-          alt="Covid"
-        />
+        <img src="img/portada.JPG" class="img-fluid" alt="Portada" />
       </div>
     </article>
     <!--
@@ -216,7 +214,9 @@
               2021-22
             </p>
 
-            <a href="# " class="btn btn-primary"> Ir a la noticia </a>
+            <a href="doc/Guia Orientacion.pdf" class="btn btn-primary">
+              Ir a la noticia
+            </a>
           </div>
         </div>
       </div>
