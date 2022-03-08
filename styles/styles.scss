@@ -33,16 +33,14 @@ form {
 }
 
 header {
+  a {
+    text-decoration: none;
+    color: $beige;
+  }
+  h1 {
+    font-size: 1.7em;
+  }
   color: $beige;
-}
-
-header a {
-  text-decoration: none;
-  color: $beige;
-}
-
-header h1 {
-  font-size: 1.7em;
 }
 
 /*

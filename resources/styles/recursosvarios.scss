@@ -1,0 +1,160 @@
+@import "variables";
+
+/*
+    Con font-face establecemos una fuente que hemos
+    descargado para usarla en nuestra pagina.
+*/
+
+@font-face {
+  font-family: $fuente;
+  src: url(../font/Noto_Serif/NotoSerif-Regular.ttf);
+}
+
+/*
+    Estableces la fuente y el color de las letras de la pagina.
+*/
+
+body {
+  color: $gris;
+  box-sizing: border-box;
+  font-family: $fuente;
+}
+
+.beige {
+  color: $beige;
+}
+
+.gris {
+  color: $gris;
+}
+
+form {
+  width: 50em;
+}
+
+header {
+  a {
+    text-decoration: none;
+    color: $beige;
+  }
+  h1 {
+    font-size: 1.7em;
+  }
+  color: $beige;
+}
+
+/*
+    Tamaño del logo del encabezado
+*/
+
+.navColor {
+  color: $beige;
+}
+
+#logoNav {
+  height: 4.5em;
+  width: auto;
+}
+
+/*
+    El navegador se desplegara pasando el raton por encima con esta opcion.
+*/
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
+}
+
+/*
+    Tamaño del calendario y el gps.
+*/
+
+#calendario {
+  width: 100%;
+  height: 15em;
+}
+
+#gps {
+  width: 100%;
+  height: 100%;
+}
+
+/*
+    Tamaño del logo en el pie de pagina.
+*/
+
+#logoPie {
+  width: 4em;
+}
+
+/*
+    Se elimina la barra baja del texto en los iconos de redes sociales.
+*/
+
+#redesSociales a {
+  text-decoration: none;
+}
+
+.iti__flag {
+  background-image: url("../img/flags.png");
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .iti__flag {
+    background-image: url("../img/flags@2x.png");
+  }
+}
+
+#animacion {
+  height: 23.7em;
+  width: 35em;
+  animation-name: animacion;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes animacion {
+  from {
+    content: url(../img/diseno.jpeg);
+  }
+  to {
+    content: url(../img/viajeaperu.jpg);
+  }
+}
+
+#transformacion {
+  img {
+    width: 35em;
+    height: auto;
+  }
+
+  :hover {
+    transition: all 4s linear;
+    transform: rotate(360deg);
+    background-size: cover;
+  }
+  height: auto;
+  background-size: cover;
+}
+
+#fondo {
+  position: fixed;
+
+  bottom: 0px;
+
+  min-width: 100%;
+
+  min-height: 100%;
+
+  background-size: cover;
+
+  background-repeat: no-repeat;
+
+  width: auto;
+
+  height: auto;
+
+  z-index: -1000;
+
+  overflow: hidden;
+}
