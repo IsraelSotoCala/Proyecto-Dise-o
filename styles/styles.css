@@ -18,15 +18,52 @@ body {
   font-family: "Noto Serif";
 }
 
+.beige {
+  color: beige;
+}
+
+.gris {
+  color: #6c757d;
+}
+
 form {
   width: 50em;
+}
+
+header {
+  color: beige;
+}
+
+header a {
+  text-decoration: none;
+  color: beige;
+}
+
+header h1 {
+  font-size: 1.7em;
 }
 
 /*
     Tamaño del logo del encabezado
 */
+.navColor {
+  color: beige;
+}
+
 #logoNav {
-  width: 5em;
+  height: 4.5em;
+  width: auto;
+}
+
+#directora {
+  border-radius: 50%;
+  border-style: groove;
+  border-color: beige;
+}
+
+#organigrama {
+  width: 45em;
+  height: auto;
 }
 
 /*
@@ -35,6 +72,11 @@ form {
 .dropdown:hover .dropdown-menu {
   display: block;
   margin-top: 0;
+}
+
+#galeria {
+  height: auto;
+  width: 80em;
 }
 
 /*

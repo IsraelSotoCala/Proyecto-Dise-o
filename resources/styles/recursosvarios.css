@@ -1,9 +1,113 @@
+@charset "UTF-8";
+/*
+    Con font-face establecemos una fuente que hemos
+    descargado para usarla en nuestra pagina.
+*/
+@font-face {
+  font-family: "Noto Serif";
+  src: url(../font/Noto_Serif/NotoSerif-Regular.ttf);
+}
+
+/*
+    Estableces la fuente y el color de las letras de la pagina.
+*/
+body {
+  color: #6c757d;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Noto Serif";
+}
+
+.beige {
+  color: beige;
+}
+
+.gris {
+  color: #6c757d;
+}
+
+form {
+  width: 50em;
+}
+
+header {
+  color: beige;
+}
+
+header a {
+  text-decoration: none;
+  color: beige;
+}
+
+header h1 {
+  font-size: 1.7em;
+}
+
+/*
+    Tamaño del logo del encabezado
+*/
+.navColor {
+  color: beige;
+}
+
+#logoNav {
+  height: 4.5em;
+  width: auto;
+}
+
+/*
+    El navegador se desplegara pasando el raton por encima con esta opcion.
+*/
+.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
+}
+
+#logoPie {
+  width: 4em;
+}
+
+/*
+    Se elimina la barra baja del texto en los iconos de redes sociales.
+*/
+#redesSociales a {
+  text-decoration: none;
+}
+
+.iti__flag {
+  background-image: url("../img/flags.png");
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .iti__flag {
+    background-image: url("../img/flags@2x.png");
+  }
+}
+
+.botones button {
+  border-radius: 50%;
+  background-color: #6c757d;
+  color: beige;
+}
+
 #animacion {
   height: 23.7em;
   width: 35em;
-  animation-name: animacion;
-  animation-duration: 4s;
-  animation-iteration-count: infinite;
+  -webkit-animation-name: animacion;
+          animation-name: animacion;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes animacion {
+  from {
+    content: url(../img/diseno.jpeg);
+  }
+  to {
+    content: url(../img/viajeaperu.jpg);
+  }
 }
 
 @keyframes animacion {
@@ -25,30 +129,25 @@
   height: auto;
 }
 
-#transformacion:hover {
+#transformacion :hover {
+  -webkit-transition: all 4s linear;
   transition: all 4s linear;
-  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
   background-size: cover;
 }
 
 #fondo {
   position: fixed;
-
+  margin-left: -0.75em;
   bottom: 0px;
-
   min-width: 100%;
-
   min-height: 100%;
-
   background-size: cover;
-
   background-repeat: no-repeat;
-
   width: auto;
-
   height: auto;
-
   z-index: -1000;
-
   overflow: hidden;
 }
+/*# sourceMappingURL=recursosvarios.css.map */

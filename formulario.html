@@ -35,90 +35,134 @@
         En esta seccion comienza una barra de navegacion, la cual hemos fusionado con el encabezado,
         la propia barra acompaña a lo largo de toda la pagina para que todas sus secciones sean accesibles.
     -->
-    <header class="row bg-dark py-2">
-      <div class="col-md-6 text-uppercase">
-        <div class="d-flex justify-content-end">
+    <header class="row bg-dark py-2 text-uppercase">
+      <div class="col-md-4">
+        <div class="d-flex justify-content-xxl-start">
           <img id="logoNav" src="img/mdc_icon.png" alt="Logo Mar de Cadiz" />
-          <h1 class="pt-4 ps-2">I.E.S. Mar de Cádiz</h1>
+          <h1 class="pt-4 ps-2">
+            <a href="index.html">I.E.S. Mar de Cádiz</a>
+          </h1>
         </div>
       </div>
-      <div class="col-md-6">
-        <nav class="navbar navbar-expand-lg">
-          <ul class="nav pt-3">
+
+      <div class="col-md-4">
+        <nav class="navbar navbar-expand-lg pt-3">
+          <ul class="nav">
             <!--
                 Seccion 1
             -->
             <li class="nav-item dropdown">
-              <a class="nav-link" href="#" role="button" aria-expanded="false"
+              <a
+                class="nav-link navColor"
+                href="#"
+                role="button"
+                aria-expanded="false"
                 >Sobre nosotros</a
               >
               <ul class="dropdown-menu">
                 <li>
-                  <a class="dropdown-item" href="#">Presentacion</a>
+                  <a class="dropdown-item" href="presentacion.html"
+                    >Presentación</a
+                  >
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#">Organizacion</a>
+                  <a class="dropdown-item" href="organizacion.html"
+                    >Organización</a
+                  >
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#">Galeria</a>
+                  <a class="dropdown-item" href="galeria.html">Galería</a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#">Medidas Covid</a>
+                  <a
+                    class="dropdown-item"
+                    href="https://www.elpuertodesantamaria.es/resumen-informacion-covid"
+                    >Medidas Covid</a
+                  >
                 </li>
               </ul>
             </li>
             <!--
-
                 Seccion 2
             -->
             <li class="nav-item dropdown">
-              <a class="nav-link" href="#" role="button" aria-expanded="false"
+              <a
+                class="nav-link navColor"
+                href="#"
+                role="button"
+                aria-expanded="false"
                 >Acceso</a
               >
               <ul class="dropdown-menu">
                 <li>
-                  <a class="dropdown-item" href="#">Orientacion</a>
+                  <a
+                    class="dropdown-item"
+                    href="doc/Cuaderno de Orientacion.pdf"
+                    >Orientación</a
+                  >
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#">Matricula</a>
+                  <a class="dropdown-item" href="matricula.html">Matrícula</a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#">Atencion al Alumnado</a>
+                  <a class="dropdown-item" href="atencionAlumnado.html"
+                    >Atención al Alumnado</a
+                  >
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#">Becas y Ayudas</a>
+                  <a class="dropdown-item" href="becasAyudas.html"
+                    >Becas y Ayudas</a
+                  >
                 </li>
               </ul>
             </li>
             <!--
-
                 Seccion 3
             -->
             <li class="nav-item dropdown">
-              <a class="nav-link" href="#" role="button" aria-expanded="false"
+              <a
+                class="nav-link navColor"
+                href="#"
+                role="button"
+                aria-expanded="false"
                 >Estudios</a
               >
               <ul class="dropdown-menu">
                 <li>
-                  <a class="dropdown-item" href="#">ESO</a>
+                  <a class="dropdown-item" href="informacionEso.html">ESO</a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#">Bachillerato</a>
+                  <a class="dropdown-item" href="informacionBachillerato.html"
+                    >Bachillerato</a
+                  >
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#">Grados Profesionales</a>
+                  <a class="dropdown-item" href="informacionGrados.html"
+                    >Grados Profesionales</a
+                  >
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#">Calendario Escolar</a>
+                  <a class="dropdown-item" href="calendario.html"
+                    >Calendario Escolar</a
+                  >
                 </li>
               </ul>
             </li>
+            <li class="nav-item">
+              <a
+                class="nav-link navColor"
+                href="resources/views/index.html"
+                role="button"
+                aria-expanded="false"
+                >Recursos</a
+              >
+            </li>
           </ul>
-
-          <audio src="audio/MiiPlaza.mp3" controls>
-            Your browser does not support the <code>audio</code> element.
-          </audio>
         </nav>
+      </div>
+      <div class="col-md-4 pt-4 ps-5">
+        <a href="#" class="pe-4"> Iniciar Sesión </a>
+        <a href="formulario.html"> Crear Cuenta </a>
       </div>
     </header>
 
@@ -174,13 +218,13 @@
             required
           />
           <div id="contraseñaHelp" class="form-text">
-            La contraseña debe contener la primera letra mayuscula y numeracion.
+            La contraseña debe contener la primera letra mayuscula y numeración.
           </div>
         </div>
 
         <div class="mb-3">
           <label for="telefonoPersonal" class="form-label"
-            >Telefono Personal</label
+            >Teléfono Personal</label
           >
           <input
             type="tel"
@@ -200,7 +244,7 @@
 
         <div class="mb-3">
           <label for="telefonoConvencional" class="form-label"
-            >Telefono Convencional</label
+            >Teléfono Convencional</label
           >
           <input
             type="tel"
@@ -226,7 +270,7 @@
             aria-describedby="mailHelp"
           />
           <div id="mailHelp" class="form-text">
-            Introduzca un e-mail valido.
+            Introduzca un e-mail válido.
           </div>
         </div>
 
@@ -356,6 +400,24 @@
             />
           </a>
         </p>
+        <div id="google_translate_element"></div>
+        <script type="text/javascript">
+          // <![CDATA[
+          function googleTranslateElementInit() {
+            new google.translate.TranslateElement(
+              {
+                pageLanguage: "es",
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+              },
+              "google_translate_element"
+            );
+          }
+          // ]]>
+        </script>
+        <script
+          src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+          type="text/javascript"
+        ></script>
       </div>
       <!--
         Enlaces de Interes
@@ -379,7 +441,7 @@
 
         <p>
           <a href="https://www.juntadeandalucia.es/" class="text-reset"
-            >Junta de Andalucia</a
+            >Junta de Andalucía</a
           >
         </p>
       </div>
@@ -389,7 +451,7 @@
           <a
             href="https://www.juntadeandalucia.es/educacion/portals/web/ced"
             class="text-reset"
-            >Conserjeria de Educacion</a
+            >Conserjería de Educación</a
           >
         </p>
 
@@ -397,7 +459,7 @@
           <a
             href="https://www.juntadeandalucia.es/educacion/portals/web/ced/delegaciones/cadiz"
             class="text-reset"
-            >Delegacion de Cadiz</a
+            >Delegación de Cádiz</a
           >
         </p>
 

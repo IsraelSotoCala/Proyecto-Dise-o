@@ -24,42 +24,56 @@
       integrity="sha384-He3RckdFB2wffiHOcESa3sf4Ida+ni/fw9SSzAcfY2EPnU1zkK/sLUzw2C5Tyuhj"
     />
     <link rel="stylesheet" href="../styles/recursosvarios.css" />
-    <link rel="stylesheet" href="../styles/styles.css" />
   </head>
-  <body>
+  <body class="container-fluid">
     <video id="fondo" autoplay muted loop>
       <source src="../video/awita.mp4" type="video/mp4" />
     </video>
 
-    <header class="row bg-dark py-2">
-      <div class="col-md-6 text-uppercase">
-        <div class="d-flex justify-content-end">
+    <header class="row bg-dark py-2 text-uppercase">
+      <div class="col-xxl-3">
+        <div class="d-flex justify-content-xxl-start">
           <img id="logoNav" src="../img/mdc_icon.png" alt="Logo Mar de Cadiz" />
-          <h1 class="pt-4 ps-2">I.E.S. Mar de Cádiz</h1>
+          <h1 class="pt-4 ps-2">
+            <a href="../../index.html">I.E.S. Mar de Cádiz</a>
+          </h1>
         </div>
       </div>
-      <div class="col-md-6">
-        <nav class="navbar navbar-expand-lg">
-          <ul class="nav pt-3">
+
+      <div class="col-xxl-3">
+        <nav class="navbar navbar-expand-lg pt-3">
+          <ul class="nav">
             <!--
                 Seccion 1
             -->
             <li class="nav-item dropdown">
-              <a class="nav-link" href="#" role="button" aria-expanded="false"
+              <a
+                class="nav-link navColor"
+                href="#"
+                role="button"
+                aria-expanded="false"
                 >Sobre nosotros</a
               >
               <ul class="dropdown-menu">
                 <li>
-                  <a class="dropdown-item" href="#">Presentacion</a>
+                  <a class="dropdown-item" href="../../presentacion.html"
+                    >Presentacion</a
+                  >
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#">Organizacion</a>
+                  <a class="dropdown-item" href="../../organizacion.html"
+                    >Organizacion</a
+                  >
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#">Galeria</a>
+                  <a class="dropdown-item" href="../../galeria.html">Galeria</a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#">Medidas Covid</a>
+                  <a
+                    class="dropdown-item"
+                    href="https://www.elpuertodesantamaria.es/resumen-informacion-covid"
+                    >Medidas Covid</a
+                  >
                 </li>
               </ul>
             </li>
@@ -67,21 +81,35 @@
                 Seccion 2
             -->
             <li class="nav-item dropdown">
-              <a class="nav-link" href="#" role="button" aria-expanded="false"
+              <a
+                class="nav-link navColor"
+                href="#"
+                role="button"
+                aria-expanded="false"
                 >Acceso</a
               >
               <ul class="dropdown-menu">
                 <li>
-                  <a class="dropdown-item" href="#">Orientacion</a>
+                  <a
+                    class="dropdown-item"
+                    href="../../doc/Cuaderno de Orientacion.pdf"
+                    >Orientacion</a
+                  >
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#">Matricula</a>
+                  <a class="dropdown-item" href="../../matricula.html"
+                    >Matricula</a
+                  >
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#">Atencion al Alumnado</a>
+                  <a class="dropdown-item" href="../../atencionAlumnado.html"
+                    >Atencion al Alumnado</a
+                  >
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#">Becas y Ayudas</a>
+                  <a class="dropdown-item" href="../../becasAyudas.html"
+                    >Becas y Ayudas</a
+                  >
                 </li>
               </ul>
             </li>
@@ -89,34 +117,83 @@
                 Seccion 3
             -->
             <li class="nav-item dropdown">
-              <a class="nav-link" href="#" role="button" aria-expanded="false"
+              <a
+                class="nav-link navColor"
+                href="#"
+                role="button"
+                aria-expanded="false"
                 >Estudios</a
               >
               <ul class="dropdown-menu">
                 <li>
-                  <a class="dropdown-item" href="#">ESO</a>
+                  <a class="dropdown-item" href="../../informacionEso.html"
+                    >ESO</a
+                  >
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#">Bachillerato</a>
+                  <a
+                    class="dropdown-item"
+                    href="../../informacionBachillerato.html"
+                    >Bachillerato</a
+                  >
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#">Grados Profesionales</a>
+                  <a class="dropdown-item" href="../../informacionGrados.html"
+                    >Grados Profesionales</a
+                  >
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#">Calendario Escolar</a>
+                  <a class="dropdown-item" href="../../calendario.html"
+                    >Calendario Escolar</a
+                  >
                 </li>
               </ul>
             </li>
+            <li class="nav-item">
+              <a
+                class="nav-link navColor"
+                href="index.html"
+                role="button"
+                aria-expanded="false"
+                >Recursos</a
+              >
+            </li>
           </ul>
-          <audio src="../../audio/MiiPlaza.mp3" controls>
-            Your browser does not support the <code>audio</code> element.
-          </audio>
         </nav>
+      </div>
+      <div class="col-xxl-3 pt-4 ps-5">
+        <a href="#" class="pe-4"> Iniciar Sesion </a>
+        <a href="formulario.html"> Crear Cuenta </a>
+      </div>
+      <div class="col-xxl-3">
+        <audio id="myaudio" src="../audio/MiiPlaza.mp3" autoplay loop>
+          Your browser does not support the <code>audio</code> element.
+        </audio>
+        <div class="pt-4 botones">
+          <button onclick="document.getElementById('myaudio').play()">
+            Play
+          </button>
+          <button onclick="document.getElementById('myaudio').pause()">
+            Pausar
+          </button>
+          <button onclick="document.getElementById('myaudio').volume += 0.1">
+            Vol +
+          </button>
+          <button onclick="document.getElementById('myaudio').volume -= 0.1">
+            Vol -
+          </button>
+        </div>
+        <script>
+          window.onload = () => {
+            var audio = document.getElementById("myaudio");
+            audio.volume = 0.05;
+          };
+        </script>
       </div>
     </header>
     <!--Carrusel-->
 
-    <article class="row py-2">
+    <article class="row py-2 beige">
       <div id="galeria" class="carousel slide col-lg-4" data-bs-ride="carousel">
         <h3 class="text-center text-uppercase">Tutoriales de Gimp</h3>
         <ol class="carousel-indicators">
@@ -183,11 +260,11 @@
         <h3 class="text-center text-uppercase">
           Tutoriales transformación CSS
         </h3>
-        <img src="../img/cyberisra.jpg" />
+        <img src="../img/cyberisra.jpg" alt="CyberIsra" />
       </div>
     </article>
 
-    <footer class="row bg-dark text-center">
+    <footer class="row bg-dark text-center beige">
       <div class="my-4 border-bottom"></div>
       <!--
         Direcion
@@ -208,6 +285,24 @@
             />
           </a>
         </p>
+        <div id="google_translate_element"></div>
+        <script type="text/javascript">
+          // <![CDATA[
+          function googleTranslateElementInit() {
+            new google.translate.TranslateElement(
+              {
+                pageLanguage: "es",
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+              },
+              "google_translate_element"
+            );
+          }
+          // ]]>
+        </script>
+        <script
+          src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+          type="text/javascript"
+        ></script>
       </div>
       <!--
         Enlaces de Interes
